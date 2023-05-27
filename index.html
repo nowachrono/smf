@@ -29,7 +29,7 @@
         })
     </script>
 </head>
-<body class="scroll-smooth">
+<body class="overflow-scroll">
 <!--vanta.js ackground-globe-->
 <div id="vanta-canvas" class="fixed z-[-1] w-full h-full top-0 left-0"></div>
 
@@ -47,7 +47,7 @@
         </div>
     
         <!--2 section-->
-        <div class="text-white text-start h-[100vh]">
+        <div class="text-white text-start justify-start h-[100vh]">
             <h2 class="text-4xl font-bold my-3 mx-8 fadeIn">About Us</h2>
             <p class="border-top text-md border-l-2 mx-8 font-bold p-2 border-shadow">
                 We are a private investment found<br>
@@ -56,43 +56,74 @@
                 top influencers
             </p>
         </div>
-        
+        <style>
+            .corner{
+                clip-path: polygon(10% 0, 80% 0%, 100% 0, 100% 70%, 90% 100%, 0 100%, 0% 80%, 0 23%);
+            }
+            .corner-team-photo {
+                clip-path: polygon(16% 0, 80% 0%, 100% 0, 100% 90%, 83% 100%, 0 100%, 0% 80%, 0 10%);
+            }
+        </style>
+
     
         <!--3 section-->
         <div class="text-white text-start h-[100vh]">
             <h2 class="text-4xl font-bold my-3 mx-20">Portfolio</h2>
-            <div class="columns-1 2xl:columns-6 xl:columns-2 md:columns-1 sm:columns-1 mx-20">
-                <button class="shadow-sm hover:shadow-gray-400 bg-gray-800 bg-opacity-50 backdrop-blur-sm m-2"><img class="p-2" src="images/5ire.svg" alt=""></button>
-                <button class="shadow-lg hover:shadow-gray-400 bg-gray-800 bg-opacity-50 backdrop-blur-sm m-2"><img class="p-2" src="images/Basketballverse.svg" alt=""></button>
-                <button class="shadow-lg hover:shadow-gray-400 bg-gray-800 bg-opacity-50 backdrop-blur-sm m-2"><img class="p-2" src="images/Chainport.svg" alt=""></button>
-                <button class="shadow-lg hover:shadow-gray-400 bg-gray-800 bg-opacity-50 backdrop-blur-sm m-2"><img class="p-2" src="images/Chillville.svg" alt=""></button>
+            <div class="columns-1 2xl:columns-6 xl:columns-2 md:columns-2 sm:columns-1 mx-20">
+                <button class="shadow-sm bg-gray-800 bg-opacity-50 m-2 corner"><img class="p-2" src="images/5ire.svg" alt=""></button>
+                <button class="shadow-lg bg-gray-800 bg-opacity-50 m-2 corner"><img class="p-2" src="images/Basketballverse.svg" alt=""></button>
+                <button class="shadow-lg bg-gray-800 bg-opacity-50 m-2 corner"><img class="p-2" src="images/Chainport.svg" alt=""></button>
+                <button class="shadow-lg bg-gray-800 bg-opacity-50 m-2 corner"><img class="p-2" src="images/Chillville.svg" alt=""></button>
                                 
-                <button class="shadow-lg hover:shadow-gray-400 bg-gray-800 bg-opacity-50 backdrop-blur-sm m-2"><img class="p-2" src="images/EYWA.svg" alt=""></button>
-                <button class="shadow-lg hover:shadow-gray-400 bg-gray-800 bg-opacity-50 backdrop-blur-sm m-2"><img class="p-2" src="images/Oortdigital.svg" alt=""></button>  
-                <button class="shadow-lg hover:shadow-gray-400 bg-gray-800 bg-opacity-50 backdrop-blur-sm m-2"><img class="p-2" src="images/5ire.svg" alt=""></button>
-                <button class="shadow-lg hover:shadow-gray-400 bg-gray-800 bg-opacity-50 backdrop-blur-sm m-2"><img class="p-2" src="images/Basketballverse.svg" alt=""></button>
-                
-                <button class="shadow-lg hover:shadow-gray-400 bg-gray-800 bg-opacity-50 backdrop-blur-sm m-2"><img class="p-2" src="images/Chainport.svg" alt=""></button>
-                <button class="shadow-lg hover:shadow-gray-400 bg-gray-800 bg-opacity-50 backdrop-blur-sm m-2"><img class="p-2" src="images/Chillville.svg" alt=""></button>
-                <button class="shadow-lg hover:shadow-gray-400 bg-gray-800 bg-opacity-50 backdrop-blur-sm m-2"><img class="p-2" src="images/5ire.svg" alt=""></button>
-                <button class="shadow-lg hover:shadow-gray-400 bg-gray-800 bg-opacity-50 backdrop-blur-sm m-2"><img class="p-2" src="images/Basketballverse.svg" alt=""></button>
-                
-                <button class="shadow-lg hover:shadow-gray-400 bg-gray-800 bg-opacity-50 backdrop-blur-sm m-2"><img class="p-2" src="images/Chainport.svg" alt=""></button>
-                <button class="shadow-lg hover:shadow-gray-400 bg-gray-800 bg-opacity-50 backdrop-blur-sm m-2"><img class="p-2" src="images/Chillville.svg" alt=""></button>
-                <button class="shadow-lg hover:shadow-gray-400 bg-gray-800 bg-opacity-50 backdrop-blur-sm m-2"><img class="p-2" src="images/5ire.svg" alt=""></button>
-                <button class="shadow-lg hover:shadow-gray-400 bg-gray-800 bg-opacity-50 backdrop-blur-sm m-2"><img class="p-2" src="images/Basketballverse.svg" alt=""></button>
-                
-                <button class="shadow-lg hover:shadow-gray-400 bg-gray-800 bg-opacity-50 backdrop-blur-sm m-2"><img class="p-2" src="images/Chainport.svg" alt=""></button>
-                <button class="shadow-lg hover:shadow-gray-400 bg-gray-800 bg-opacity-50 backdrop-blur-sm m-2"><img class="p-2" src="images/Chillville.svg" alt=""></button>
+                <button class="shadow-lg bg-gray-800 bg-opacity-50 m-2 corner"><img class="p-2" src="images/EYWA.svg" alt=""></button>
+                <button class="shadow-lg bg-gray-800 bg-opacity-50 m-2 corner"><img class="p-2" src="images/Oortdigital.svg" alt=""></button>  
+                <button class="shadow-lg bg-gray-800 bg-opacity-50 m-2 corner"><img class="p-2" src="images/5ire.svg" alt=""></button>
+                <button class="shadow-lg bg-gray-800 bg-opacity-50 m-2 corner"><img class="p-2" src="images/Basketballverse.svg" alt=""></button>
+                <span  class="hiden" id="more">
+                    <button class="shadow-lg bg-gray-800 bg-opacity-50 m-2 corner"><img class="p-2" src="images/Chainport.svg" alt=""></button>
+                    <button class="shadow-lg bg-gray-800 bg-opacity-50 m-2 corner"><img class="p-2" src="images/Chillville.svg" alt=""></button>
+                    <button class="shadow-lg bg-gray-800 bg-opacity-50 m-2 corner"><img class="p-2" src="images/5ire.svg" alt=""></button>
+                    <button class="shadow-lg bg-gray-800 bg-opacity-50 m-2 corner"><img class="p-2" src="images/Basketballverse.svg" alt=""></button>
+                    
+                    <button class="shadow-lg bg-gray-800 bg-opacity-50 m-2 corner"><img class="p-2" src="images/Chainport.svg" alt=""></button>
+                    <button class="shadow-lg bg-gray-800 bg-opacity-50 m-2 corner"><img class="p-2" src="images/Chillville.svg" alt=""></button>
+                    <button class="shadow-lg bg-gray-800 bg-opacity-50 m-2 corner"><img class="p-2" src="images/5ire.svg" alt=""></button>
+                    <button class="shadow-lg bg-gray-800 bg-opacity-50 m-2 corner"><img class="p-2" src="images/Basketballverse.svg" alt=""></button>
+                    
+                    <button class="shadow-lg bg-gray-800 bg-opacity-50 m-2 corner"><img class="p-2" src="images/Chainport.svg" alt=""></button>
+                    <button class="shadow-lg bg-gray-800 bg-opacity-50 m-2 corner"><img class="p-2" src="images/Chillville.svg" alt=""></button>
+
+                    <button id="toggle-btn" class="mt-4 text-blue-500 focus:outline-none">Read More</button>
+                    <button id="hide-btn" class="hidden mt-4 text-blue-500 focus:outline-none">Hide</button>
+                </span>
+
             </div>
         </div>
+
+        <script>
+                const moreTextEl = document.getElementById('more');
+                const toggleBtnEl = document.getElementById('toggle-btn');
+                const hideBtnEl = document.getElementById('hide-btn');
+
+                toggleBtnEl.addEventListener('click', () => {
+                    moreTextEl.classList.toggle('hidden');
+                    toggleBtnEl.classList.toggle('hidden');
+                    hideBtnEl.classList.toggle('hidden');
+                });
+
+                hideBtnEl.addEventListener('click', () => {
+                    moreTextEl.classList.toggle('hidden');
+                    toggleBtnEl.classList.toggle('hidden');
+                    hideBtnEl.classList.toggle('hidden');
+                });
+        </script>
         
         <!--4 section-->
         <div class="text-white text-center h-[100vh] ">
             <h2 class="text-3xl font-bold my-3">Our Team</h2>
-            <img src="images/DSC_0524.jpg" width=200 class="img-responsive" >
-            <img src="images/DSC_0526.jpg" width=200 class="img-responsive" >
-            <img src="images/DSC_0528.jpg" width=200 class="img-responsive" >
+            <img src="images/DSC_0524.jpg" width="200" height="300" class="corner-team-photo mx-24 my-8" >
+            <img src="images/DSC_0526.jpg" width="200" height="100" class="corner-team-photo mx-44 my-8" >
+            <img src="images/DSC_0528.jpg" width="200" height="100" class="corner-team-photo mx-24 my-8" >
         </div>
     </div>
 </div>
