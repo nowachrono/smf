@@ -5,10 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!--another stars backgorund-->
     <link rel="stylesheet" href="css/background.css">
-    <link rel="stylesheet" href="css/animate.min.css">
+    <!--output tailwind css files-->
+    <link rel="stylesheet" href="dist/output.css">
     <title>Shadow Media Foundation - Ventures Found</title>
-
+    <!--scripts for dinamyc animated background-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
     <script>
@@ -17,7 +20,7 @@
                 el: "#vanta-canvas",
                 mouseControls: true,
                 touchControls: true,
-                gyroControls: false,
+                gyroControls: true,
                 minHeight: 200.00,
                 minWidth: 200.00,
                 scale: 1.00,
@@ -28,9 +31,14 @@
             })
         })
     </script>
+    <style>
+        ::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
 </head>
-<body class="overflow-scroll">
-<!--vanta.js ackground-globe-->
+<body class="5th overflow-x-hidden">
+<!--vanta.js background-globe-->
 <div id="vanta-canvas" class="fixed z-[-1] w-full h-full top-0 left-0"></div>
 
 <div id="main-container" class="relative">
@@ -38,18 +46,19 @@
 
         <!--1 section-->
         <div class="text-white text-start justify-start mx-8 h-[100vh]" >
-            <img src="images/SMF.png" width="150" className="logo fadeIn" >
-            <h1 class="text-7xl font-bold mt-[30vh]">Shadow Media Foundation</h1>
-            <h6 class="text-md my-3 font-semibold">Ventures Found</h6>
-            <button class="bg-transparent hover:bg-white text-white font-semibold hover:text-black py-2 px-4 border border-white hover:border-transparent rounded shadow-lg hover:shadow-white">
+            <img src="images/SMF.png" width="150" className="logo" >
+            <h1 class="text-7xl font-bold mt-[30vh] animate__animated animate__fadeInLeft animate__slower">Shadow Media Foundation</h1>
+            <h6 class="text-md my-3 font-semibold animate__animated animate__fadeInLeft">Ventures Found</h6>
+            <button class="bg-transparent hover:bg-white text-white font-semibold hover:text-black py-2 px-4 border border-white hover:border-transparent rounded shadow-lg hover:shadow-white
+            animate__animated animate__fadeIn">
                 Explore
             </button>
         </div>
     
         <!--2 section-->
         <div class="text-white text-start justify-start h-[100vh]">
-            <h2 class="text-4xl font-bold my-3 mx-8 fadeIn">About Us</h2>
-            <p class="border-top text-md border-l-2 mx-8 font-bold p-2 border-shadow">
+            <h2 class="text-4xl font-bold my-3 mx-8 animate__animated animate__fadeIn">About Us</h2>
+            <p class="border-top text-md border-l-2 mx-8 font-bold p-2 border-shadow animate__animated animate__fadeInLeft">
                 We are a private investment found<br>
                 specializing in digital assets and blockchain technology,<br>
                 in parallel, we have our own media network and are<br>
@@ -67,9 +76,9 @@
 
     
         <!--3 section-->
-        <div class="text-white text-start h-[100vh]">
-            <h2 class="text-4xl font-bold my-3 mx-20">Portfolio</h2>
-            <div class="columns-1 2xl:columns-6 xl:columns-2 md:columns-2 sm:columns-1 mx-20">
+        <div class="text-white text-start h-[180vh]">
+            <h2 class="text-4xl font-bold my-3 mx-20 animate__animated animate__fadeIn">Portfolio</h2>
+            <div class="columns-1 2xl:columns-6 xl:columns-2 md:columns-2 sm:columns-1 mx-20 animate__animated animate__fadeIn">
                 <button class="shadow-sm bg-gray-800 bg-opacity-50 m-2 corner"><img class="p-2" src="images/5ire.svg" alt=""></button>
                 <button class="shadow-lg bg-gray-800 bg-opacity-50 m-2 corner"><img class="p-2" src="images/Basketballverse.svg" alt=""></button>
                 <button class="shadow-lg bg-gray-800 bg-opacity-50 m-2 corner"><img class="p-2" src="images/Chainport.svg" alt=""></button>
@@ -79,51 +88,54 @@
                 <button class="shadow-lg bg-gray-800 bg-opacity-50 m-2 corner"><img class="p-2" src="images/Oortdigital.svg" alt=""></button>  
                 <button class="shadow-lg bg-gray-800 bg-opacity-50 m-2 corner"><img class="p-2" src="images/5ire.svg" alt=""></button>
                 <button class="shadow-lg bg-gray-800 bg-opacity-50 m-2 corner"><img class="p-2" src="images/Basketballverse.svg" alt=""></button>
-                <span  class="hiden" id="more">
-                    <button class="shadow-lg bg-gray-800 bg-opacity-50 m-2 corner"><img class="p-2" src="images/Chainport.svg" alt=""></button>
-                    <button class="shadow-lg bg-gray-800 bg-opacity-50 m-2 corner"><img class="p-2" src="images/Chillville.svg" alt=""></button>
-                    <button class="shadow-lg bg-gray-800 bg-opacity-50 m-2 corner"><img class="p-2" src="images/5ire.svg" alt=""></button>
-                    <button class="shadow-lg bg-gray-800 bg-opacity-50 m-2 corner"><img class="p-2" src="images/Basketballverse.svg" alt=""></button>
+  
+                <button class="shadow-lg bg-gray-800 bg-opacity-50 m-2 corner"><img class="p-2" src="images/Chainport.svg" alt=""></button>
+                <button class="shadow-lg bg-gray-800 bg-opacity-50 m-2 corner"><img class="p-2" src="images/Chillville.svg" alt=""></button>
+                <button class="shadow-lg bg-gray-800 bg-opacity-50 m-2 corner"><img class="p-2" src="images/5ire.svg" alt=""></button>
+                <button class="shadow-lg bg-gray-800 bg-opacity-50 m-2 corner"><img class="p-2" src="images/Basketballverse.svg" alt=""></button>
                     
-                    <button class="shadow-lg bg-gray-800 bg-opacity-50 m-2 corner"><img class="p-2" src="images/Chainport.svg" alt=""></button>
-                    <button class="shadow-lg bg-gray-800 bg-opacity-50 m-2 corner"><img class="p-2" src="images/Chillville.svg" alt=""></button>
-                    <button class="shadow-lg bg-gray-800 bg-opacity-50 m-2 corner"><img class="p-2" src="images/5ire.svg" alt=""></button>
-                    <button class="shadow-lg bg-gray-800 bg-opacity-50 m-2 corner"><img class="p-2" src="images/Basketballverse.svg" alt=""></button>
+                <button class="shadow-lg bg-gray-800 bg-opacity-50 m-2 corner"><img class="p-2" src="images/Chainport.svg" alt=""></button>
+                <button class="shadow-lg bg-gray-800 bg-opacity-50 m-2 corner"><img class="p-2" src="images/Chillville.svg" alt=""></button>
+                <button class="shadow-lg bg-gray-800 bg-opacity-50 m-2 corner"><img class="p-2" src="images/5ire.svg" alt=""></button>
+                <button class="shadow-lg bg-gray-800 bg-opacity-50 m-2 corner"><img class="p-2" src="images/Basketballverse.svg" alt=""></button>
                     
-                    <button class="shadow-lg bg-gray-800 bg-opacity-50 m-2 corner"><img class="p-2" src="images/Chainport.svg" alt=""></button>
-                    <button class="shadow-lg bg-gray-800 bg-opacity-50 m-2 corner"><img class="p-2" src="images/Chillville.svg" alt=""></button>
-
-                    <button id="toggle-btn" class="mt-4 text-blue-500 focus:outline-none">Read More</button>
-                    <button id="hide-btn" class="hidden mt-4 text-blue-500 focus:outline-none">Hide</button>
-                </span>
+                <button class="shadow-lg bg-gray-800 bg-opacity-50 m-2 corner"><img class="p-2" src="images/Chainport.svg" alt=""></button>
+                <button class="shadow-lg bg-gray-800 bg-opacity-50 m-2 corner"><img class="p-2" src="images/Chillville.svg" alt=""></button>
 
             </div>
         </div>
 
-        <script>
-                const moreTextEl = document.getElementById('more');
-                const toggleBtnEl = document.getElementById('toggle-btn');
-                const hideBtnEl = document.getElementById('hide-btn');
-
-                toggleBtnEl.addEventListener('click', () => {
-                    moreTextEl.classList.toggle('hidden');
-                    toggleBtnEl.classList.toggle('hidden');
-                    hideBtnEl.classList.toggle('hidden');
-                });
-
-                hideBtnEl.addEventListener('click', () => {
-                    moreTextEl.classList.toggle('hidden');
-                    toggleBtnEl.classList.toggle('hidden');
-                    hideBtnEl.classList.toggle('hidden');
-                });
-        </script>
-        
         <!--4 section-->
         <div class="text-white text-center h-[100vh] ">
-            <h2 class="text-3xl font-bold my-3">Our Team</h2>
-            <img src="images/DSC_0524.jpg" width="200" height="300" class="corner-team-photo mx-24 my-8" >
-            <img src="images/DSC_0526.jpg" width="200" height="100" class="corner-team-photo mx-44 my-8" >
-            <img src="images/DSC_0528.jpg" width="200" height="100" class="corner-team-photo mx-24 my-8" >
+            <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
+                <div class="mx-auto mb-8 max-w-screen-sm lg:mb-16">
+                    <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-white">Our team</h2>  
+                </div> 
+                    <div class="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+                        <div class="text-center text-gray-400">
+                            <img class="mx-auto mb-4 corner-team-photo" src="images/DSC_0524.jpg" width="200">
+                            <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                <a href="#">Name</a>
+                            </h3>
+                            <p>Head of Comms & Community</p>
+                        </div>
+                        <div class="text-center text-gray-400">
+                            <img class="mx-auto mb-4 corner-team-photo" src="images/DSC_0526.jpg" width="200">
+                            <h3 class="mb-1 text-2xl font-bold tracking-tight text-white">
+                                <a href="#">Name</a>
+                            </h3>
+                            <p>CEO</p>
+                        </div>
+                        <div class="text-center text-gray-400">
+                            <img class="mx-auto mb-4 corner-team-photo" src="images/DSC_0528.jpg" width="200">
+                            <h3 class="mb-1 text-2xl font-bold tracking-tight text-white">
+                                <a href="#">Name</a>
+                            </h3>
+                            <p>Founder & YouTube Host</p>
+                        </div>
+        
+                    </div>  
+                </div>
         </div>
     </div>
 </div>
